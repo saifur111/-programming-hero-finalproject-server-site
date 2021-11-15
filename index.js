@@ -152,7 +152,7 @@ async function run() {
             const user = await usersCollection.findOne(query);
             console.log(user);
             let isAdmin = false;
-            if ( user.role === 'admin') {
+            if ( user?.role === 'admin') {
                    isAdmin = true;
                    
              }
